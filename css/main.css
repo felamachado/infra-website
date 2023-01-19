@@ -287,16 +287,22 @@ ul li {
     margin-bottom: 80px; }
 
 /* ==========================================================================
-	$Features
+	$Nosotros
 ========================================================================== */
-.feature {
-  margin-bottom: 50px; }
-  .feature-content {
+.nosotros {
+  margin-bottom: 10px;
+  text-align: center; }
+
+  .nosotros-content {
     padding: 0 15px;
-    margin-top: 30px; }
-  .feature .icon {
+    margin-top: 10px; }
+  .nosotros .icon {
     color: #e84545;
     font-size: 60px; }
+  .nosotros h3 {
+    margin-top: 0;
+    margin-bottom: 100px; }
+
 
 /* ==========================================================================
 	$Works
@@ -365,64 +371,6 @@ ul li {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
 
-/* ==========================================================================
-	$Teams
-========================================================================== */
-.person {
-  max-width: 270px; }
-  .person-content {
-    margin-top: 20px; }
-  .person h4 {
-    font-weight: 400; }
-  .person h5 {
-    color: #e84545;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 20px; }
-
-.social-icons, .footer .footer-share {
-  margin-top: 30px; }
-  .social-icons li, .footer .footer-share li {
-    float: left; }
-  .social-icons a, .footer .footer-share a {
-    border: 1px solid #e8ecee;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    color: #c6cacc;
-    display: block;
-    font-size: 18px;
-    height: 40px;
-    line-height: 40px;
-    margin-right: 5px;
-    text-align: center;
-    width: 40px; }
-    .social-icons a:hover, .footer .footer-share a:hover {
-      background-color: #e84545;
-      border-color: #e84545;
-      color: #fff; }
-
-/* ==========================================================================
-	$Testimonials
-========================================================================== */
-.testimonials {
-  background-color: #53354a;
-  position: relative; }
-  .testimonials blockquote {
-    border: 0;
-    margin: 0;
-    padding: 100px 15% 0; }
-  .testimonials p {
-    color: #fff;
-    font: italic 36px "Cardo", Georgia, "Times New Roman", serif; }
-  .testimonials cite {
-    color: #fff;
-    display: block;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    margin-top: 30px;
-    text-transform: uppercase; }
 
 /* ==========================================================================
 	$Download
