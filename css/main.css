@@ -776,3 +776,7 @@ ul li {
 
 .icon-dribbble:before {
   content: "\e063"; }
+
+.logo-scroll {
+    width: 10% !important; /* Ajusta el tamaño según sea necesario */
+}
