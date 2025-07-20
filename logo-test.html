@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .test-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .logo-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .logo-img {
+            max-width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Logo Display Test</h1>
+        
+        <div class="logo-container">
+            <h2>Original Logo</h2>
+            <img src="images/infra-transp-blanco.png" alt="Infra Logo" class="logo-img">
+            <p>This is how the logo appears without any special styling.</p>
+        </div>
+        
+        <div class="logo-container" style="background-color: #292c47;">
+            <h2 style="color: white;">Logo on Dark Background</h2>
+            <img src="images/infra-transp-blanco.png" alt="Infra Logo" class="logo-img" style="height: 80px;">
+            <p style="color: white;">This is how the logo appears on the header background.</p>
+        </div>
+        
+        <div class="logo-container">
+            <h2>Logo with Forced Size</h2>
+            <img src="images/infra-transp-blanco.png" alt="Infra Logo" style="height: 80px; width: auto; max-width: 200px; object-fit: contain; display: block; margin: 0 auto;">
+            <p>This is the logo with explicit size and display properties.</p>
+        </div>
+    </div>
+</body>
+</html>

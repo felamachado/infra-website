@@ -5,8 +5,10 @@ $(document).ready(function() {
 
 		if (scroll >= 50) {
 			$('#header').addClass('fixed');
+			$('.logo img').css('height', '60px');
 		} else {
 			$('#header').removeClass('fixed');
+			$('.logo img').css('height', '80px');
 		}
 	});
 
@@ -22,8 +24,26 @@ $(document).ready(function() {
 		offset: '75%'
 	});
 
-	// Fancybox
-	$('.work-box').fancybox();
+	// Fancybox - Enhanced initialization
+	$('.work-box').fancybox({
+		padding: 0,
+		helpers: {
+			media: {},
+			buttons: {},
+			thumbs: {
+				width: 50,
+				height: 50
+			},
+			// Ensure overlay is properly handled
+			overlay: {
+				closeClick: false
+			}
+		},
+		beforeLoad: function() {
+			// Ensure proper image loading
+			this.href = $(this.element).attr('href');
+		}
+	});
 
 	// Flexslider
 	$('.flexslider').flexslider({
